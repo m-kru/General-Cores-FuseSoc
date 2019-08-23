@@ -9,6 +9,11 @@ filesets:
         file_type: vhdlSource-93
         logical_name: general_cores
 
+targets:
+    default:
+        filesets:
+            - rtl
+
 provider:
     name: url
     url: https://www.ohwr.org/project/general-cores/raw/0ed0cf1d2d8b21a9d92fea949a1ccaa03d9883a2/modules/genrams/genram_pkg.vhd
