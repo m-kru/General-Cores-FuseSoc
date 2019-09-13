@@ -1,0 +1,22 @@
+CAPI=2:
+
+name: cern:general_cores:wbgen2_fifo_sync:0.0.0
+
+filesets:
+    rtl:
+        files:
+            - wbgen2_fifo_sync.vhd
+        file_type: vhdlSource-93
+        logical_name: general_cores
+        depend:
+            - cern:general_cores:wbgen2_pkg:0.0.0
+
+targets:
+    default:
+        filesets:
+            - rtl
+
+provider:
+    name: url
+    url: https://www.ohwr.org/project/general-cores/raw/0ed0cf1d2d8b21a9d92fea949a1ccaa03d9883a2/modules/wishbone/wbgen2/wbgen2_fifo_sync.vhd
+    filetype: simple
