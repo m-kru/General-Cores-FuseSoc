@@ -18,5 +18,5 @@ targets:
 
 provider:
     name: url
-    url: https://www.ohwr.org/project/general-cores/raw/0ed0cf1d2d8b21a9d92fea949a1ccaa03d9883a2/modules/wishbone/wb_crossbar/xwb_register_link.vhd
+    url: https://www.ohwr.org/project/general-cores/raw/0ed0cf1d2d8b21a9d92fea949a1ccaa03d9883a2/modules/wishbone/wb_register/xwb_register_link.vhd
     filetype: simple
