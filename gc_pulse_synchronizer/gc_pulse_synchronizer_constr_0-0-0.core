@@ -9,7 +9,7 @@ filesets:
 
     tcl:
         files:
-            - constr/gc_pulse_synchronizer.targets : {file_type : tclSource}
+            - constr/gc_pulse_synchronizer.tcl : {file_type : tclSource}
 
 targets:
     default:
