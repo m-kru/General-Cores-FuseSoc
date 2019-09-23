@@ -11,10 +11,17 @@ filesets:
         depend:
             - cern:general_cores:gencores_pkg:0.0.0
 
+    vivado_constr:
+        files:
+            - constr/gc_pulse_synchronizer.xdc : {file_type : xdc}
+
+    tcl:
+        files:
+            - constr/gc_pulse_synchronizer.targets : {file_type : tclSource}
+
 targets:
     default:
-        filesets:
-            - rtl
+        filesets: [rtl, "tool_vivado? (vivado_constr)", tcl]
 
 provider:
     name: url
