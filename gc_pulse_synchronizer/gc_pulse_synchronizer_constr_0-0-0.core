@@ -1,0 +1,16 @@
+CAPI=2:
+
+name: cern:general_cores:gc_pulse_synchronizer_constr:0.0.0
+
+filesets:
+    vivado_constr:
+        files:
+            - constr/gc_pulse_synchronizer.xdc : {file_type : xdc}
+
+    tcl:
+        files:
+            - constr/gc_pulse_synchronizer.targets : {file_type : tclSource}
+
+targets:
+    default:
+        filesets: ["tool_vivado? (vivado_constr)", tcl]
